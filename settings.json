@@ -4,20 +4,35 @@
   "editor.selectionHighlight": false,
   "editor.suggestOnTriggerCharacters": false,
   "editor.formatOnSave": true,
-  "editor.fontSize": 18,
+  "editor.fontSize": 20,
+  "editor.cursorBlinking": "solid",
+  "terminal.integrated.fontSize": 20,
   "editor.fontFamily": "OperatorMono Nerd Font",
   "editor.renderIndentGuides": true,
+  "editor.suggest.showIcons": false,
   "files.trimTrailingWhitespace": true,
-
+  "terminal.external.osxExec": "iTerm.App",
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "files.exclude": {
+    "**/.DS_Store": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/npm-packages-offline-cache": true,
+    "**/flow-typed": true,
+    "**/build": true
+  },
   "files.associations": {
     "*.jsx": "JavaScript React",
     "*.js": "javascriptreact"
   },
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
-  "window.zoomLevel": -1,
+  "workbench.editor.showTabs": false,
+  "editor.rulers": [120],
+  "window.zoomLevel": 0,
   "workbench.colorTheme": "One Dark Pro Monokai Darker",
-  "flowide.pathToFlow": "/node_modules/.bin/flow",
+  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
   "vim.easymotion": true,
   "vim.sneak": true,
   "vim.incsearch": true,
@@ -32,8 +47,12 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<C-n>"],
+      "before": ["<CR>"],
       "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "h", "u"],
+      "commands": ["git.revertSelectedRanges"]
     }
   ],
   "vim.leader": "<space>",
@@ -41,5 +60,24 @@
     "<C-a>": false,
     "<C-f>": false
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.statusBarColorControl": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  },
+  "breadcrumbs.enabled": false,
+  // disable typescript in favour of flow
+  "javascript.validate.enable": false,
+  // disable git blame on current line
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

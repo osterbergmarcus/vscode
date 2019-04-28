@@ -1,17 +1,131 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    {
-        "key": "cmd+shift+v",
-        "command": "pasteAndIndent.action",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+cmd+i",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+ctrl+f",
-        "command": "editor.action.formatDocument"
-    }
+  {
+    "key": "cmd+shift+v",
+    "command": "pasteAndIndent.action",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+ctrl+f",
+    "command": "editor.action.formatDocument"
+  },
+  // navigate suggestions
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  // navigate command palette
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenNavigatePrevious",
+    "when": "inQuickOpen"
+  },
+  // navigate between view panes
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "!suggestWidgetMultipleSuggestions && !inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "!suggestWidgetMultipleSuggestions && !inQuickOpen"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup"
+  },
+  // split view to the bottom
+  {
+    "key": "ctrl+w s",
+    "command": "workbench.action.splitEditorDown"
+  },
+  // split view to the right
+  {
+    "key": "ctrl+w v",
+    "command": "workbench.action.splitEditorRight"
+  },
+  // open terminal
+  {
+    "key": "cmd+m",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  // navigate explorer
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "list.focusDown",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "list.focusUp",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "revealFileInOS",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  // navigate search results
+  {
+    "key": "ctrl+j",
+    "command": "search.action.focusNextSearchResult",
+    "when": "searchViewletVisible && hasSearchResult"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "search.action.focusPreviousSearchResult",
+    "when": "searchViewletVisible && hasSearchResult"
+  },
+  // navigate problems in current file
+  {
+    "key": "ctrl+[",
+    "command": "editor.action.marker.prev",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "editor.action.marker.next",
+    "when": "editorTextFocus && !editorReadonly"
+  }
 ]
