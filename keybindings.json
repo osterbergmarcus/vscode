@@ -9,6 +9,10 @@
     "key": "shift+ctrl+f",
     "command": "editor.action.formatDocument"
   },
+  {
+    "key": "cmd+m",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
   // navigate suggestions
   {
     "key": "ctrl+j",
@@ -31,7 +35,7 @@
     "command": "workbench.action.quickOpenNavigatePrevious",
     "when": "inQuickOpen"
   },
-  // navigate between view panes
+  // navigate between views
   {
     "key": "ctrl+h",
     "command": "workbench.action.focusLeftGroup"
@@ -50,22 +54,16 @@
     "key": "ctrl+l",
     "command": "workbench.action.focusRightGroup"
   },
-  // split view to the bottom
+  // split views
   {
     "key": "ctrl+w s",
     "command": "workbench.action.splitEditorDown"
   },
-  // split view to the right
   {
     "key": "ctrl+w v",
     "command": "workbench.action.splitEditorRight"
   },
-  // open terminal
-  {
-    "key": "cmd+m",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  // navigate explorer
+  // navigate file explorer
   {
     "key": "enter",
     "command": "list.select",
@@ -127,5 +125,16 @@
     "key": "ctrl+]",
     "command": "editor.action.marker.next",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  // navigate previous and next results in find
+  {
+    "key": "ctrl+p",
+    "command": "editor.action.previousMatchFindAction",
+    "when": "findWidgetVisible"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "findWidgetVisible"
   }
 ]

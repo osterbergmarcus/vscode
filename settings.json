@@ -53,6 +53,14 @@
     {
       "before": ["<leader>", "h", "u"],
       "commands": ["git.revertSelectedRanges"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "<tab>"],
+      "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"]
     }
   ],
   "vim.leader": "<space>",
