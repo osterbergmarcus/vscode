@@ -1,10 +1,11 @@
 # vim friendly vscode setup
 
-## simple keybindings for better window/panel navigation
-replace your keybindings with `keybindings.json`
+Simple keybindings for better window/panel navigation using `ctrl + {h,j,k,l}` keys
 
-supported features:
-- Navigate file explorer and modify files/folders (inspired by NERDtree)
-- Navigate prev/next advanced search results
-- Navigate prev/next find results
-- Navigate/split views (similar to viewport splitting/moving in vim)
+supported navigation features:
+- File explorer and modify files/folders (inspired by NERDtree)
+- Advanced search results
+- Current file find results
+- Workbench views (similar to viewport splitting/moving in vim)
+- Problems view
+- Panel views
