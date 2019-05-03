@@ -136,5 +136,27 @@
     "key": "ctrl+n",
     "command": "editor.action.nextMatchFindAction",
     "when": "findWidgetVisible"
+  },
+  // navigate panel views
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.previousPanelView",
+    "when": "panelFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.nextPanelView",
+    "when": "panelFocus"
+  },
+  // navigate problems view
+  {
+    "key": "ctrl+j",
+    "command": "list.focusDown",
+    "when": "problemsViewFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "list.focusUp",
+    "when": "problemsViewFocus"
   }
 ]
