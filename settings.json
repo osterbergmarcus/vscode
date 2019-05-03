@@ -75,6 +75,8 @@
   },
   "vim.statusBarColorControl": true,
   "workbench.colorCustomizations": {
+    "list.activeSelectionBackground": "#efefef",
+    "list.activeSelectionForeground": "#939393",
     "statusBar.background": "#005f5f",
     "statusBar.noFolderBackground": "#005f5f",
     "statusBar.debuggingBackground": "#005f5f"
