@@ -115,7 +115,7 @@
     "command": "search.action.focusPreviousSearchResult",
     "when": "searchViewletVisible && hasSearchResult"
   },
-  // navigate problems in current file
+  // navigate problems in active workbench
   {
     "key": "ctrl+[",
     "command": "editor.action.marker.prev",
@@ -141,12 +141,12 @@
   {
     "key": "ctrl+h",
     "command": "workbench.action.previousPanelView",
-    "when": "panelFocus"
+    "when": "activePanel"
   },
   {
     "key": "ctrl+l",
     "command": "workbench.action.nextPanelView",
-    "when": "panelFocus"
+    "when": "activePanel"
   },
   // navigate problems view
   {

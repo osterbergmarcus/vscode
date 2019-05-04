@@ -61,6 +61,14 @@
     {
       "before": ["<leader>", "<tab>"],
       "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": [
+        {
+          "command": "workbench.view.explorer"
+        }
+      ]
     }
   ],
   "vim.leader": "<space>",
