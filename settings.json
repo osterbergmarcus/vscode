@@ -13,14 +13,17 @@
   "files.trimTrailingWhitespace": true,
   "terminal.external.osxExec": "iTerm.App",
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "window.nativeTabs": true,
   "files.exclude": {
-    "**/.DS_Store": true
+    "**/.DS_Store": true,
+    "**/*.log"
   },
   "search.exclude": {
     "**/node_modules": true,
     "**/npm-packages-offline-cache": true,
     "**/flow-typed": true,
-    "**/build": true
+    "**/build": true,
+    "**/*.log"
   },
   "files.associations": {
     "*.jsx": "JavaScript React",
@@ -85,9 +88,9 @@
   "workbench.colorCustomizations": {
     "list.activeSelectionBackground": "#efefef",
     "list.activeSelectionForeground": "#939393",
-    "statusBar.background": "#005f5f",
-    "statusBar.noFolderBackground": "#005f5f",
-    "statusBar.debuggingBackground": "#005f5f"
+    "statusBar.background": "#5f0000",
+    "statusBar.noFolderBackground": "#5f0000",
+    "statusBar.debuggingBackground": "#5f0000"
   },
   "breadcrumbs.enabled": false,
   // disable typescript in favour of flow
