@@ -5,6 +5,8 @@
   "editor.suggestOnTriggerCharacters": false,
   "editor.formatOnSave": true,
   "editor.fontSize": 20,
+  "editor.letterSpacing": -0.5,
+  "editor.fontWeight": "500",
   "editor.cursorBlinking": "solid",
   "terminal.integrated.fontSize": 20,
   "editor.fontFamily": "OperatorMono Nerd Font",
@@ -79,6 +81,7 @@
     "<C-a>": false,
     "<C-f>": false
   },
+  "workbench.fontAliasing": "antialiased",
   "editor.minimap.enabled": false,
   "editor.lineNumbers": "relative",
   "[javascriptreact]": {
