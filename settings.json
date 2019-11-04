@@ -37,7 +37,6 @@
   "editor.rulers": [120],
   "window.zoomLevel": 0,
   "workbench.colorTheme": "One Dark Pro Monokai Darker",
-  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
   "vim.easymotion": true,
   "vim.sneak": true,
   "vim.incsearch": true,
@@ -81,6 +80,12 @@
     "<C-a>": false,
     "<C-f>": false
   },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "workbench.fontAliasing": "antialiased",
   "editor.minimap.enabled": false,
   "editor.lineNumbers": "relative",
@@ -96,8 +101,7 @@
     "statusBar.debuggingBackground": "#5f0000"
   },
   "breadcrumbs.enabled": false,
-  // disable typescript in favour of flow
-  "javascript.validate.enable": false,
+  "javascript.validate.enable": true,
   // disable git blame on current line
   "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.enabled": false,
