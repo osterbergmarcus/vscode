@@ -14,7 +14,7 @@
   "editor.suggest.showIcons": false,
   "files.trimTrailingWhitespace": true,
   "terminal.external.osxExec": "iTerm.App",
-  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "window.nativeTabs": true,
   "files.exclude": {
     "**/.DS_Store": true,
